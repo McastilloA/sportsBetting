@@ -31,10 +31,10 @@ This project is created for a technical test and was generated with [Angular CLI
 
 <div align="center">
 
-![Astro Badge](https://img.shields.io/badge/Angular-c3002f?logo=angular&logoColor=fff&style=flat) {:target="_blank"}
+![Angular Badge](https://img.shields.io/badge/Angular-c3002f?logo=angular&logoColor=fff&style=flat) {:target="_blank"}
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat){:target="_blank"}
 ![Typescript Badge](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=fff&style=flat){:target="_blank"}
-![Typescript Badge](https://img.shields.io/badge/Google_Fonts-ea4335?logo=google&logoColor=fff&style=flat){:target="_blank"}
+![Google_Fonts Badge](https://img.shields.io/badge/Google_Fonts-ea4335?logo=google&logoColor=fff&style=flat){:target="_blank"}
 
 </div>
 
