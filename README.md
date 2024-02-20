@@ -2,7 +2,7 @@
 <img src="src/favicon.ico" height="50px" width="auto" /> 
 
 ### SportsBetting page
-This project is created for a technical test and was generated with [Angular CLI](https://github.com/angular/angular-cli){:target="_blank"} version 17.2.0.
+This project is created for a technical test and was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 </div>
 
 <div align="center">
@@ -31,10 +31,10 @@ This project is created for a technical test and was generated with [Angular CLI
 
 <div align="center">
 
-![Angular Badge](https://img.shields.io/badge/Angular-c3002f?logo=angular&logoColor=fff&style=flat) {:target="_blank"}
-![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat){:target="_blank"}
-![Typescript Badge](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=fff&style=flat){:target="_blank"}
-![Google_Fonts Badge](https://img.shields.io/badge/Google_Fonts-ea4335?logo=google&logoColor=fff&style=flat){:target="_blank"}
+![Angular Badge](https://img.shields.io/badge/Angular-c3002f?logo=angular&logoColor=fff&style=flat) 
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![Typescript Badge](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=fff&style=flat)
+![Google_Fonts Badge](https://img.shields.io/badge/Google_Fonts-ea4335?logo=google&logoColor=fff&style=flat)
 
 </div>
 
@@ -43,10 +43,10 @@ This project is created for a technical test and was generated with [Angular CLI
 
 ## 🛠️ Stack
 
-- [**Angular**](https://angular.io/){:target="_blank"} - The web framework for cAngular is a development platform, built on TypeScript.
-- [**Typescript**](https://www.typescriptlang.org/){:target="_blank"} - JavaScript with syntax for types.
-- [**Tailwindcss**](https://tailwindcss.com/){:target="_blank"} - A utility-first CSS framework for rapidly building custom designs.
-- [**Google fonts**](https://fonts.google.com/){:target="_blank"} - Self-host fonts in neatly bundled in CDN.
+- [**Angular**](https://angular.io/) - The web framework for cAngular is a development platform, built on TypeScript.
+- [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
+- [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**Google fonts**](https://fonts.google.com/) - Self-host fonts in neatly bundled in CDN.
 
 ## 🚀 Getting Started
 
@@ -58,7 +58,7 @@ git clone https://github.com/McastilloA/sportsBetting.git
 
 2. Install the dependencies:
 
-- You can use ***NPM***, which is installed by default when you download [NodeJS](https://nodejs.org/en){:target="_blank"}.
+- You can use ***NPM***, which is installed by default when you download [NodeJS](https://nodejs.org/en) .
 
 
 <!-- ```bash
@@ -78,7 +78,7 @@ bun install
 npm install -g npm
 ```
 
-- or you can use [pnpm](https://pnpm.io){:target="_blank"}:
+- or you can use [pnpm](https://pnpm.io):
 
 ```bash
 # Install pnpm globally if you don't have it:
@@ -102,7 +102,7 @@ npm start
 pnpm start
 ```
 
-4. Open [**http://localhost:4200**](http://localhost:4200/){:target="_blank"} with your browser to see the result 🚀
+4. Open [**http://localhost:4200**](http://localhost:4200/) with your browser to see the result 🚀
 
 <!-- ### 🤝 Contributing
 <a href="https://github.com/McastilloA/sportsBetting/graphs/contributors">
@@ -128,7 +128,7 @@ Components the module **home**
 | :-- | :--------------- | :-------------------------------------------- |
 | ⚙️  | `start` | Starts local dev server at `localhost:4200`.  |
 | ⚙️  | `build`          | The build artifacts will be stored in the `dist/` directory.               |
-| ⚙️  | `test`           | execute the unit tests via [Karma](https://karma-runner.github.io){:target="_blank"}.      |
+| ⚙️  | `test`           | execute the unit tests via [Karma](https://karma-runner.github.io).      |
 | ⚙️  | `e2e`            | execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.                          |
 | ⚙️  | `preview`        | Preview your build locally, before deploying. |
 
@@ -140,7 +140,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## ☎️ Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli){:target="_blank"} page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
 
