@@ -1,1 +1,78 @@
-<p>match works!</p>
+<div class="mx-auto">
+  <div class="border-b border-gray-300 mb-4">
+    <ul class="flex flex-wrap-mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+      <li class="mr-2" role="presentation">
+        <button class="inline-block text-black hover:text-green-600 rounded-t-lg py-3 px-4 
+          text-lg font-medium text-center border-transparent border-b-2 focus:border-green-600
+          focus:text-green-600 active:text-green-600" id="tab-1" data-tabs-target="#tab1" type="button" 
+          role="tab" aria-controls="tab1" aria-selected="true" (click)="filterStadium(1)">
+          La batea
+        </button>
+      </li>
+      <li class="mr-2" role="presentation">
+        <button class="inline-block text-black hover:text-green-600 rounded-t-lg py-3 px-4 
+          text-lg font-medium text-center border-transparent border-b-2 focus:border-green-600
+          focus:text-green-600 visited:text-green-600" id="tab-2" data-tabs-target="#tab2" type="button" 
+          role="tab" aria-controls="tab2" aria-selected="false" (click)="filterStadium(2)">
+          Sixto Durán Ballen
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div id="myTabContent">
+    <div id="tab2" role="tabpanel" aria-labelledby="tab-1">
+      <div class="grid grid-cols-2 gap-6 text-center">
+        @for (match of matches.flat(); track $index) {
+        <div class="block p-3 bg-white border border-gray-200 shadow dark:border-gray-400">
+          <div class="grid grid-cols-3 gap-2 items-center">
+            <div id="local_team">
+              <picture class="mx-auto">
+                <source srcset="{{getImage(match.baseLogoLocal)}}" class="mx-auto w-1/4" type="image/png">
+                <img srcset="{{getImage(match.baseLogoLocal)}}" class="mx-auto w-1/4"
+                  alt="ESCUDO {{match.nombreVisita}}" />
+              </picture>
+              <p class="my-3 font-medium text-center">
+                {{match.nombreLocal}}
+              </p>
+            </div>
+
+            <div id="date_and_results">
+              <p class="my-2 font-medium text-center">
+                {{match.fechaTexto}}
+              </p>
+              <span class="text-white text-xs font-medium px-2.5 py-0.5 rounded-full" 
+                [ngClass]="getColor('bg', match.colorEstado)">
+                {{match.descripcionEstado}}
+              </span>
+              <p class="my-2 font-semibold text-3xl text-black text-center" *ngIf="!match.select">
+                {{match.horaTexto}}
+              </p>
+              <p class="my-2 font-semibold text-3xl text-center" *ngIf="match.select">
+                {{match.resultadoLocal}} - {{match.resultadoVisita}}
+              </p>
+              <p class="my-2 font-medium text-center" [ngClass]="getColor('text', match.colorEstadio)">
+                {{match.nombreEstadio}}
+              </p>
+              <p class="my-2 font-medium text-center">
+                {{match.fechaNumeroTexto}}
+              </p>
+            </div>
+
+            <div id="visitor_team">
+              <picture class="mx-auto">
+                <source srcset="{{getImage(match.baseLogoVisita)}}" class="mx-auto w-1/4" type="image/png">
+                <img srcset="{{getImage(match.baseLogoVisita)}}" class="mx-auto w-1/4"
+                  alt="ESCUDO {{match.nombreVisita}}" />
+              </picture>
+              <p class="my-3 font-medium text-center">
+                {{match.nombreVisita}}
+              </p>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

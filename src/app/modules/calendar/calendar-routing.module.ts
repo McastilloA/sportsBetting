@@ -4,7 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { CalendarComponent } from './components/calendar.component';
 
 const routes: Routes = [
-  { path: '', component: CalendarComponent }
+  { 
+    path: '', 
+    loadComponent: () => CalendarComponent 
+  }
 ];
 
 @NgModule({

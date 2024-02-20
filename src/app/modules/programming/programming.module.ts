@@ -7,13 +7,11 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { ListComponent } from './components/list/list.component';
 
 @NgModule({
-  declarations: [
-    LayoutComponent,
-    ListComponent
-  ],
   imports: [
     CommonModule,
-    ProgrammingRoutingModule
+    ProgrammingRoutingModule,
+    LayoutComponent,
+    ListComponent
   ]
 })
 export class ProgrammingModule { }

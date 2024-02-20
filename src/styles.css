@@ -1,15 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Open+Sans:wght@300;700&family=Poppins:wght@200;400;600&family=Roboto:wght@100;300;400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-  font-family: Menlo, Monaco, Lucida Console, "Courier New", Courier, monospace;
-  background: #fff;
-} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+p,
+a,
+li {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
 }

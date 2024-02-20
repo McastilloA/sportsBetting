@@ -4,14 +4,11 @@ import { CommonModule } from '@angular/common';
 import { CalendarRoutingModule } from './calendar-routing.module';
 import { CalendarComponent } from './components/calendar.component';
 
-
 @NgModule({
-  declarations: [
-    CalendarComponent
-  ],
   imports: [
     CommonModule,
-    CalendarRoutingModule
+    CalendarRoutingModule,
+    CalendarComponent
   ]
 })
 export class CalendarModule { }

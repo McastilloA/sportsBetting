@@ -1,2 +1,7 @@
-<app-date />
-<app-match />
+<section class="bg-white w-full">
+  <div class="max-w-screen-xl text-center py-5 px-4 m-auto">
+    <app-title [title]="'Programación'" />
+    <app-date [listCalendar]="currentItemCalendar()" [dateSelected]="dInit" (eventDate)="dateOnchange($event)" />
+    <app-match [listMatches]="currentItemPro()" />
+  </div>
+</section>

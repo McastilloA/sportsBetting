@@ -6,12 +6,10 @@ import { PositionComponent } from './components/position.component';
 
 
 @NgModule({
-  declarations: [
-    PositionComponent
-  ],
   imports: [
     CommonModule,
-    PositionRoutingModule
+    PositionRoutingModule,
+    PositionComponent
   ]
 })
 export class PositionModule { }

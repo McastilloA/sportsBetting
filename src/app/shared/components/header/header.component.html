@@ -1,41 +1,75 @@
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+<nav class="bg-green-500 fixed w-full z-20 top-0 start-0 border-b border-green-600">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+    <a [routerLink]="['/home']" class="flex items-center space-x-3">
+      <picture>
+        <source srcset="http://deportivo2.edbsharks.com/assets/images/logoMascotaNaranjito.png" class="h-14"
+          type="image/png">
+        <img srcset="http://deportivo2.edbsharks.com/assets/images/logoMascotaNaranjito.png" class="h-14"
+          alt="logo liga oriental" />
+      </picture>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Liga Oriental</span>
     </a>
-    <button data-collapse-toggle="navbar-default" type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-      aria-controls="navbar-default" aria-expanded="false">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M1 1h15M1 7h15M1 13h15" />
-      </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul
-        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#"
-            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-            aria-current="page">Home</a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0">
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 
+        h-10 justify-center text-base text-green-500 rounded-lg md:hidden hover:bg-green-100 
+        focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 
+        dark:hover:bg-green-700 dark:focus:ring-green-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14" class="fill-none w-5 h-5">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-green-100 rounded-lg 
+        bg-green-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-green-500">
+        <li class="p-1 font-sans text-base antialiased font-medium leading-normal gap-x-2 text-green-900">
+          <a [routerLink]="['/home']" routerLinkActive="text-white" class="flex items-center py-2 px-3 
+            text-green-900 rounded md:p-0">
+            <svg class="w-7 h-7 mr-2 text-green-900 fill-none" aria-hidden="true" routerLinkActive="text-white"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="m4 12 8-8 8 8M6 10.5V19c0 .6.4 1 1 1h3v-3c0-.6.4-1 1-1h2c.6 0 1 .4 1 1v3h3c.6 0 1-.4 1-1v-8.5" />
+            </svg>
+            <span>Inicio</span>
+          </a>
         </li>
-        <li>
-          <a href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+
+        <li class="p-1 font-sans text-base antialiased font-medium leading-normal gap-x-2 text-green-900">
+          <a [routerLink]="['/position']" routerLinkActive="text-white" class="flex items-center py-2 px-3 
+            text-green-900 rounded  md:p-0">
+            <svg class="w-7 h-7 mr-2 text-green-900 fill-none" aria-hidden="true" routerLinkActive="text-white"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="currentColor" stroke-width="1.5"
+                d="M3 11h18M3 15h18m-9-4v8m-8 0h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z" />
+            </svg>
+            <span>Posiciones</span>
+          </a>
         </li>
-        <li>
-          <a href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+
+        <li class="p-1 font-sans text-base antialiased font-medium leading-normal gap-x-2 text-green-900">
+          <a [routerLink]="['/programming']" routerLinkActive="text-white" class="flex items-center py-2 px-3 
+            text-green-900 rounded md:p-0">
+            <svg class="w-6 h-6 mr-2 text-green-900 fill-current" aria-hidden="true" routerLinkActive="text-white"
+              viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z" />
+            </svg>
+            <span>Programación</span>
+          </a>
         </li>
-        <li>
-          <a href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+
+        <li class="p-1 font-sans text-base antialiased font-medium leading-normal gap-x-2 text-green-900">
+          <a [routerLink]="['/calendar']" routerLinkActive="text-white" class="flex items-center py-2 px-3 
+            text-green-900 rounded  md:p-0">
+            <svg class="w-7 h-7 mr-2 text-green-900 fill-none" aria-hidden="true" routerLinkActive="text-white"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14c.6 0 1-.4 1-1V7c0-.6-.4-1-1-1H5a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Zm3-7h0v0h0v0Zm4 0h0v0h0v0Zm4 0h0v0h0v0Zm-8 4h0v0h0v0Zm4 0h0v0h0v0Zm4 0h0v0h0v0Z" />
+            </svg>
+            <span>Calendario</span>
+          </a>
         </li>
       </ul>
     </div>

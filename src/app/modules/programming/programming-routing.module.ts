@@ -5,8 +5,14 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { ListComponent } from './components/list/list.component';
 
 const routes: Routes = [
-  { path: '', component: LayoutComponent },
-  { path: ':id', component: ListComponent }
+  {
+    path: '',
+    component: LayoutComponent,
+  },
+  {
+    path: ':id',
+    component: ListComponent
+  }
 ];
 
 @NgModule({
