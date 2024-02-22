@@ -38,8 +38,8 @@ This project is created for a technical test and was generated with [Angular CLI
 
 </div>
 
-<!-- > [!WARNING]
-> This page is not official. The official page is [**premiosesland.com**](https://premiosesland.com/). -->
+> [!WARNING]
+> This page is an technical proof. I reserve any liability that may arise from improper handling of this public resource, warning about the possible consequences that could arise as a result of improper handling.
 
 ## 🛠️ Stack
 
@@ -65,7 +65,7 @@ dir coink
 
 2. Install the dependencies, which is installed by default when you download [NodeJS](https://nodejs.org/en)
 
-- You can use **NPM**:
+- You can use **npm**:
 
 
 <!-- ```bash
