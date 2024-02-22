@@ -43,7 +43,7 @@ This project is created for a technical test and was generated with [Angular CLI
 
 ## 🛠️ Stack
 
-- [**Angular**](https://angular.io/) - The web framework for cAngular is a development platform, built on TypeScript.
+- [**Angular**](https://angular.io/) - An open source framewok developed in TypeScript that is used to build single page applications (SPA), dynamic web applications and mobiles.
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 - [**Google fonts**](https://fonts.google.com/) - Self-host fonts in neatly bundled in CDN.
@@ -53,12 +53,19 @@ This project is created for a technical test and was generated with [Angular CLI
 1. [Fork](https://github.com/McastilloA/sportsBetting/fork) or clone this repository.
 
 ```bash
+# Clone repository in local:
 git clone https://github.com/McastilloA/sportsBetting.git
+
+# Go to folder with MacOS, WSL & Linux:
+cd coink
+
+# Go to folder with Windows:
+dir coink
 ```
 
-2. Install the dependencies:
+2. Install the dependencies, which is installed by default when you download [NodeJS](https://nodejs.org/en)
 
-- You can use ***NPM***, which is installed by default when you download [NodeJS](https://nodejs.org/en) .
+- You can use **NPM**:
 
 
 <!-- ```bash
@@ -74,28 +81,34 @@ bun install
 
 
 ```bash
-# Install npm globally if you don't have it:
+# 1. Install npm globally if you don't have it:
 npm install -g npm
+
+# 2. Install angular/cli globally if you don't have it:
+npm install -g @angular/cli
 ```
 
 - or you can use [pnpm](https://pnpm.io):
 
 ```bash
-# Install pnpm globally if you don't have it:
+# 1. Install pnpm globally if you don't have it:
 npm install -g pnpm
-
-# Install dependencies:
-pnpm install
 
 # (Optional) You can pin the version of pnpm used on 
 # your project using the following command:
 corepack use pnpm
+
+# 2. Install angular/cli in folder if you don't have it:
+pnpm install @angular/cli
+
+# 3. Install dependencies:
+pnpm install
 ```
 
 3. Run the development server:
 
 ```bash
-# Run with bun:
+# Run with npm:
 npm start
 
 # Run with pnpm:
@@ -126,16 +139,16 @@ Components the module **home**
 
 |     | Command          | Action                                        |
 | :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `start` | Starts local dev server at `localhost:4200`.  |
-| ⚙️  | `build`          | The build artifacts will be stored in the `dist/` directory.               |
-| ⚙️  | `test`           | execute the unit tests via [Karma](https://karma-runner.github.io).      |
-| ⚙️  | `e2e`            | execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.                          |
-| ⚙️  | `preview`        | Preview your build locally, before deploying. |
+| ⚙️ | `start` | Starts local dev server at `localhost:4200`.  |
+| ⚙️ | `build` | The build artifacts will be stored in the `dist/` directory. |
+| ⚙️ | `test` | execute the unit tests via [Karma](https://karma-runner.github.io). |
+| ⚙️ | `e2e` | execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities. |
+| ⚙️ | `preview` | Preview your build locally, before deploying. |
 
 
 ## 💻 Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module|etc`.
 
 
 ## ☎️ Further help
@@ -150,6 +163,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## ✅ Por hacer...
 
-- [ ] Mejorar diseño de la página
-- [ ] Construir módulos Home, Posiciones, Calenadrio, Login, Register
-- [ ] Revisar responsive de toda la página
+- [ ] Mejorar diseño de la página.
+- [ ] Construir módulos Home, Posiciones, Calenadrio, Login, Register.
+- [ ] Revisar responsive de toda la página.
